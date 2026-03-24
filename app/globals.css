@@ -1,0 +1,36 @@
+/* Global CSS Styles */
+
+:root {
+    --primary-color: #E4B363; /* Golden hue */
+    --secondary-color: #5A4C5A; /* Deep plum */
+    --background-color: #FAF3E0; /* Light parchment */
+    --text-color: #2D2A29; /* Dark text color */
+}
+
+body {
+    font-family: 'Tiro Bangla', 'Noto Serif Bengali', serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Tiro Bangla', 'Noto Serif Bengali', serif;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+p {
+    margin: 0 0 1em;
+}
+
+/* Add traditional Indian design styling */
+/* For example, borders, patterns, etc., can be added here based on design needs */
+
+/* Example of parchment-like styling */
+body {
+    background-image: url('path/to/parchment-texture.png'); /* Placeholder for actual image */
+    background-size: cover;
+}
