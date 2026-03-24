@@ -1,1 +1,13 @@
-import React, { useState } from 'react';\n\nconst Navbar = () => {\n    const [isOpen, setIsOpen] = useState(false);\n\n    const toggleMenu = () => {\n        setIsOpen(!isOpen);\n    };\n\n    return (\n        <nav className="bg-white shadow-md fixed top-0 left-0 right-0 z-10">\n            <div className="container mx-auto flex items-center justify-between p-4">\n                <div className="flex items-center">\n                    <img src="/path/to/logo.png" alt="Logo" className="h-8 w-8" />\n                    <h1 className="text-2xl font-bold ml-2">ঋগ্বেদ</h1>\n                </div>\n                <button className="lg:hidden" onClick={toggleMenu}>\n                    {isOpen ? '❌' : '☰'}\n                </button>\n                <div className={`lg:flex ${isOpen ? 'block' : 'hidden'}`}>\n                    <ul className="flex space-x-4">\n                        <li><a href="#">হোম</a></li>\n                        <li><a href="#">পড়ুন</a></li>\n                        <li><a href="#">খুঁজুন</a></li>\n                    </ul>\n                </div>\n            </div>\n        </nav>\n    );\n};\n\nexport default Navbar;
+'use client';
+import Link from 'next/link';
+import React from 'react';
+
+export default function Navbar() {
+  return (
+    <nav className="sticky top-0 bg-[#FFF8E7] border-b-2 border-[#D4AF37] z-50 p-4 flex justify-center gap-6">
+      <Link href="/" className="text-[#3E1C00] font-semibold hover:text-[#FF6B00]">হোম</Link>
+      <Link href="/browse/1" className="text-[#3E1C00] font-semibold hover:text-[#FF6B00]">পড়ুন</Link>
+      <Link href="/search" className="text-[#3E1C00] font-semibold hover:text-[#FF6B00]">খুঁজুন</Link>
+    </nav>
+  );
+}
