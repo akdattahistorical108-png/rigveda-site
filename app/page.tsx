@@ -1,1 +1,10 @@
-<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <link rel="stylesheet" href="styles.css">\n    <title>Home Page</title>\n</head>\n<body>\n    <div class="header">\n        <div class="om-symbol">OM</div>\n        <h1 class="bengali-title">\u0986\u09AE\u09D7\u09B8\u09BB\u09CD\u09A4\u09C0</h1>\n        <input type="text" class="search-bar" placeholder="Search...">\n    </div>\n    <div class="mandals-grid">\n        <div class="mandal">Mandal 1</div>\n        <div class="mandal">Mandal 2</div>\n        <div class="mandal">Mandal 3</div>\n        <div class="mandal">Mandal 4</div>\n    </div>\n    <section class="about">\n        <h2>About Us</h2>\n        <p>This project is dedicated to showcasing the Rigveda.</p>\n    </section>\n    <section class="features">\n        <h2>Features</h2>\n        <ul>\n            <li>Feature 1</li>\n            <li>Feature 2</li>\n            <li>Feature 3</li>\n        </ul>\n    </section>\n    <footer>\n        <p>&copy; 2026 Rigveda Site</p>\n    </footer>\n</body>\n</html>\n
+import React from 'react';
+
+export default function Home() {
+  return (
+    <main className="flex min-h-screen flex-col items-center justify-center p-24">
+      <h1 className="text-4xl font-bold">Rigveda Project is Live!</h1>
+      <p className="mt-4">আপনার সুপাবেস কানেকশন এবং কোড এখন কাজ করছে।</p>
+    </main>
+  );
+}
