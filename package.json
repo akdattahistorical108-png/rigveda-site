@@ -2,10 +2,11 @@
   "name": "rigveda-nextjs",
   "version": "1.0.0",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
+  "dev": "next dev --webpack",
+  "build": "next build --webpack",
+  "start": "next start",
+  "lint": "next lint"
+}
   "dependencies": {
     "@supabase/supabase-js": "^2.0.0",
     "next": "14.0.0",
